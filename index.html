@@ -16,3 +16,34 @@
             <span style="background: #1a1a1a; color: #ccc; padding: 12px 24px; border-radius: 30px; border: 1px solid #333;">显卡工具</span>
             <span style="background: #1a1a1a; color: #ccc; padding: 12px 24px; border-radius: 30px; border: 1px solid #333;">内存工具</span>
         </div>
+     <div id="page1" style="max-width: 800px; margin: 20px auto; display: none; background: #1a1a1a; padding: 30px; border-radius: 16px; border: 1px solid #333; color: #e0e0e0;">
+        <h2>主板工具</h2>
+        <a href="https://www.asus.com" target="-blank">主板官网（华硕）</a>
+    </div>
+
+    <div id="page2" style="max-width: 800px; margin: 20px auto; display: none; background: #1a1a1a; padding: 30px; border-radius: 16px; border: 1px solid #333; color: #e0e0e0;">
+        <h2>超频工具</h2>
+        <p></p >
+    </div>
+
+    <div id="page3" style="max-width: 800px; margin: 20px auto; display: none; background: #1a1a1a; padding: 30px; border-radius: 16px; border: 1px solid #333; color: #e0e0e0;">
+        <h2>显卡工具</h2>
+        <p></p >
+    </div>
+
+    <div id="page4" style="max-width: 800px; margin: 20px auto; display: none; background: #1a1a1a; padding: 30px; border-radius: 16px; border: 1px solid #333; color: #e0e0e0;">
+        <h2>内存工具</h2>
+        <p></p >
+    </div>
+
+    <script>
+        function switchTab(pageId) {
+             document.querySelectorAll('#page1, #page2, #page3, #page4')
+                .forEach(p => p.style.display = 'none');
+            
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
